@@ -5,13 +5,13 @@
     <title>MonSiteAnime</title>
     <link href="../css/StyleSheet.css" rel="stylesheet" />
 </head>
-<body>
+<body class="display_flex column">
     <!-- MENU -->
     <header>
         <!-- NAVIGATION -->
         <nav id="menu" class="position_fixed display_flex">
             <div id="menu_container" class="display_flex margin_auto flex_end">
-                <div id="main_menu" class="display_flex">
+                <div id="main_menu" class="display_flex asenine_font_family">
                     <div class="display_flex column margin_auto">
                         <a href="#">Accueil</a>
                         <a href="#">Informations</a>
@@ -22,7 +22,7 @@
                 <div id="border" class="display_flex">
                     <div class="display_flex margin_auto"></div>
                 </div>
-                <div id="alt_menu" class="display_flex">
+                <div id="alt_menu" class="display_flex asenine_font_family">
                     <div class="display_flex column margin_auto">
                         <a href="#">Mentions légales</a>
                         <a href="#">Plan du site</a>
@@ -38,57 +38,90 @@
         </nav>
     </header>
 
+    <!-- GRAPHIC FILER -->
+    <section>
+        <section id="graphic_filer" class="display_flex absolute translate3d_up">
+            <section class="display_flex margin_auto column">
+                <div>
+                    <div class="pink_color circle circle_left_shift"></div>
+                    <div class="pink_color circle"></div>
+                </div>
+                <div>
+                    <div class="pink_color circle circle_left_shift"></div>
+                    <div class="pink_color circle"></div>
+                </div>
+            </section>
+
+            <section class="display_flex margin_auto column">
+                <div>
+                    <div class="blue_color circle"></div>
+                    <div class="blue_color circle circle_left_shift"></div>
+                </div>
+                <div>
+                    <div class="blue_color circle"></div>
+                    <div class="blue_color circle circle_left_shift"></div>
+                </div>
+            </section>
+        </section>
+    </section>
+
     <!-- BODY -->
     <section>
         <!-- HOME -->
         <section id="home" class="display_flex">
             <div id="home_watermark" class="display_flex margin_auto">
-                <div class="margin_auto">
-                    <h1>Patisserie-land</h1>
+                <div class="margin_auto asenine_font_family">
+                    <h1>Pâtisserie-land</h1>
                 </div>
             </div>
         </section>
 
-        <!-- INFORMATIONS -->
-        <section id="info">
-            <h2>Nos spécialités</h2>
-            <div>
-                <div>
-                    <h3>Macaron</h3>
-                </div>
-                <p>
-                    Le macaron est un petit gâteau d'amande, granuleux et moelleux,
-                    à la forme arrondie, d'environ 3 à 5 cm de diamètre,
-                    spécialité de plusieurs villes et régions françaises,
-                    et dont la recette et l'aspect varient : Amiens, Boulay, Chartres,
-                    Cormery, Joyeuse, Le Dorat, Massiac, Montmorillon, Nancy, Réau, Saint-Émilion,
-                    Sainte-Croix Lannion ou Sault.
-                </p>
-            </div>
-            <div>
-                <div>
-                    <h3>Chocolat</h3>
-                </div>
-                <p>
-                    Le chocolat, terme d'origine mésoaméricaine1, est un aliment plus ou moins sucré produit à partir de la fève de cacao.
-                    Celle-ci est fermentée, torréfiée, broyée jusqu'à former une pâte de cacao liquide dont est extraite la matière grasse
-                    appelée beurre de cacao. Le chocolat est constitué du mélange, dans des proportions variables, de pâte de cacao,
-                    de beurre de cacao et de sucre ; auxquels sont ajoutées éventuellement des épices, comme la vanille,
-                    ou des matières grasses végétales.
-                </p>
 
-            </div>
-            <div>
-                <div>
-                    <h3>Glace</h3>
-                </div>
-                <p>
-                    La glace à l'italienne, ou crème glacée molle, est un type de crème glacée très aérée,
-                    préparée dans une machine réfrigérante ou avec une poche à douille, qui la sert directement dans le cornet.
-                    Ce type de glace ne vient pas d'Italie mais des États-Unis. La glace américaine, ou Soft Serve (en anglais),
-                    a été créée en 1938 dans l'Illinois.
-                </p>
-            </div>
+        <!-- INFORMATIONS -->
+        <section id="info" class="display_flex margin_auto center_text space_betweeen">
+            <section>
+                <h2>Nos spécialités</h2>
+                <section id="specialities_bloc" class="display_flex">
+                    <div>
+                        <div id="macaron_picture" class="margin_auto">
+                            <h3>Macaron</h3>
+                        </div>
+                        <p>
+                            Le macaron est un petit gâteau d'amande, granuleux et moelleux,
+                            à la forme arrondie, d'environ 3 à 5 cm de diamètre,
+                            spécialité de plusieurs villes et régions françaises,
+                            et dont la recette et l'aspect varient : Amiens, Boulay, Chartres,
+                            Cormery, Joyeuse, Le Dorat, Massiac, Montmorillon, Nancy, Réau, Saint-Émilion,
+                            Sainte-Croix Lannion ou Sault.
+                        </p>
+                    </div>
+                    <div>
+                        <div id="chocolate_picture" class="margin_auto">
+                            <h3>Chocolat</h3>
+                        </div>
+                        <p>
+                            Le chocolat, terme d'origine mésoaméricaine1, est un aliment plus ou moins sucré produit à partir de la fève de cacao.
+                            Celle-ci est fermentée, torréfiée, broyée jusqu'à former une pâte de cacao liquide dont est extraite la matière grasse
+                            appelée beurre de cacao. Le chocolat est constitué du mélange, dans des proportions variables, de pâte de cacao,
+                            de beurre de cacao et de sucre ; auxquels sont ajoutées éventuellement des épices, comme la vanille,
+                            ou des matières grasses végétales.
+                        </p>
+
+                    </div>
+
+                    <div>
+                        <div id="icecream_picture" class="margin_auto">
+                            <h3>Glace</h3>
+                        </div>
+                        <p>
+                            La glace à l'italienne, ou crème glacée molle, est un type de crème glacée très aérée,
+                            préparée dans une machine réfrigérante ou avec une poche à douille, qui la sert directement dans le cornet.
+                            Ce type de glace ne vient pas d'Italie mais des États-Unis. La glace américaine, ou Soft Serve (en anglais),
+                            a été créée en 1938 dans l'Illinois.
+                        </p>
+                    </div>
+                </section>
+            </section>
         </section>
 
         <!-- PRESENTATION -->

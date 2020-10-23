@@ -1,4 +1,13 @@
 ﻿@media only screen and (min-width: 501px) {
+    @font-face {
+        font-family: 'asenine';
+        src: url('../fonts/asenine/ASENINE_.ttf') format('truetype'),
+             url('../fonts/asenine/ASENST__.ttf') format('truetype'), 
+             url('../fonts/asenine/ASENT___.ttf') format('truetype'),
+             url('../fonts/asenine/ASENW___.ttf') format('truetype'); 
+        font-weight: normal;
+        font-style: normal;
+    }
     
     * {
         margin: 0;
@@ -25,17 +34,31 @@
         justify-content: flex-end;
     }
 
-    .height_100 {
-        height: 100%
+    .space_betweeen {
+        justify-content: space-between;
     }
 
-    /* generic beacons */
+    .fit_content {
+        width: fit-content;
+    }
+
+    .center_text {
+        text-align: center;
+    }
+
+    /* generic tags */
     body {
         width: 100vw;
         height: 100vh;
     }
 
+    .absolute {
+        position: absolute;
+    }
 
+    .asenine_font_family {
+        font-family: asenine;
+    }
 
     /* MENU */
     #menu {
@@ -61,7 +84,7 @@
     }
 
     #menu #main_menu {
-        font-size: 25px;
+        font-size: 30px;
         text-align: right;
         margin-left: 0;
         margin-right: 2%
@@ -92,7 +115,51 @@
         font-size: 18px;
     }
 
+    /* GRAPHIC FILER */
+    #graphic_filer {
+        width: 90%;
+        animation-name: circles_dance;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        top: 85%;
+    }
+
+    .circle {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        opacity: 0.9;
+    }
+
+    .circle_left_shift {
+        transform: translate3d(150px, 0px, 0px);
+    }
+
+    .pink_color {
+        background-color: #9b59b6;
+    }
+
+    .blue_color {
+        background-color: #34495e;
+    }
+
+    .translate3d_up {
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    @keyframes circles_dance {
+        50% {
+            transform: translate3d(50px, 0px, 0px);
+        }
+
+        100% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+
     /* BODY */
+
+    /* HOME */
     #home {
         width: 100vw;
         height: 100vh;
@@ -130,5 +197,51 @@
         100% {
             height: 15%;
         }
+    }
+
+    /* INFORMATIONS */
+    #info {
+        width: 80vw;
+        height: 100vh;
+    }
+
+    #info h2 {
+        height: 20%;
+        font-size: 3.5em;
+        font-family: asenine;
+        color: #34495e;
+    }
+
+    #specialities_bloc {
+        height: 79%
+    }
+
+    .specialities {
+        width: 30%;
+        height: 100%;
+    }
+
+    #macaron_picture {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-image: url(../img/i133093-recette-macaron-noel-framboise.jpeg);
+        background-size: cover;
+    }
+
+    #chocolate_picture {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-image: url(../img/chocolat.jpeg);
+        background-size: cover;
+    }
+
+    #icecream_picture {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-image: url(../img/Famille-glace.jpg);
+        background-size: cover;
     }
 }
